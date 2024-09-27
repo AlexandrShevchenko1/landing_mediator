@@ -40,6 +40,12 @@ h1,h2,h3,h4,h5,h6{
     background-size: cover;
 }
 
+.intro__suptitle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .intro__suptitle button{
     font-size: 16px;
     color: #fff;
@@ -74,8 +80,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .intro_buttons {
+    display: flex;
     margin-top: 32px;
     text-align: center;
+    justify-content: center;
+    gap: 24px;
 }
 /* Header */
 .header{
@@ -103,6 +112,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* Button */
+.support_button,
 .start_btn{
     display: inline-block;
     vertical-align: top;
@@ -120,6 +130,16 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
 
     transition: .2s linear;
+}
+
+.support_button{
+    background-color: transparent;
+    color: white;
+}
+
+.support_button:hover{
+    background-color: white;
+    color: black;
 }
 
 .start_btn:hover{
